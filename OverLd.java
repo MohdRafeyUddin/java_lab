@@ -1,0 +1,19 @@
+class MethodOverladingDemo
+{
+	float sum(float a ,float b){
+		return a+b;
+	}
+	double sum(double a,double b,double c){
+		return a+b+c;
+	}
+	
+}
+class OverLd
+{
+	public static void main(String[] args) 
+	{
+		MethodOverladingDemo obj = new MethodOverladingDemo();
+		System.out.println("10 + 20 = "+obj.sum(10,20));
+		System.out.println("10 + 20 + 30 = "+obj.sum(10,20,30));
+	}
+}
